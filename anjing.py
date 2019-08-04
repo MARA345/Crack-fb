@@ -89,7 +89,6 @@ def anjas():
     except (KeyError, IOError):
         os.system('reset')
         print logo
-                print logo
         print 'silahkankan Ambil lisensinya'
         print 'Klik Enter Otomatis ke Browser'
         print """Untuk mengambil licensi
