@@ -89,16 +89,23 @@ def anjas():
     except (KeyError, IOError):
         os.system('reset')
         print logo
-        print 'Masukan Licensi'
+                print logo
+        print 'silahkankan Ambil lisensinya'
+        print 'Klik Enter Otomatis ke Browser'
+        print """Untuk mengambil licensi
+============================="""
+        os.system('xdg-open https://duit.cc/ale3V ')
+        time.sleep(6)
+        print 'Masukan licensi'
         uname = raw_input('\n\x1b[32;1m[\x1b[33;1m#\x1b[32;1m]\x1b[37;1m Username : ')
         if uname == name:
             pwd = raw_input('\x1b[32;1m[\x1b[33;1m#\x1b[32;1m]\x1b[37;1m Password : ')
             if pwd == paws:
-                print '\x1b[32;1m[\x1b[32;1m+\x1b[32;1m]\x1b[37;1m LOG IN SUCCES'
+                print '\x1b[32;1m[\x1b[32;1m+\x1b[32;1m]\x1b[37;1m login Berhasil'
                 cek = raw_input('\x1b[32;1m[\x1b[31;1m+\x1b[32;1m]\x1b[37;1m Press Enter to continue ')
                 login()
             else:
-                print '\x1b[32;1m[\x1b[31;1m-\x1b[32;1m]\x1b[37;1m Password \x1b[31;1mWrong'
+                print '\x1b[32;1m[\x1b[31;1m-\x1b[32;1m]\x1b[37;1m Password \x1b[31;1mlicensi anda salah'
                 raw_input('\x1b[32;1m[\x1b[31;1m+\x1b[32;1m]\x1b[37;1m You Must Enter Again ')
                 os.system('reset')
                 anjas()
@@ -106,6 +113,7 @@ def anjas():
             print '\x1b[32;1m[\x1b[31;1m-\x1b[32;1m]\x1b[37;1m Username \x1b[31;1mWrong'
             raw_input('\x1b[32;1m[\x1b[31;1m+\x1b[32;1m]\x1b[37;1m You Must Enter Again  ')
             anjas()
+ 
 
 
 def login():
