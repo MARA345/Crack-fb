@@ -93,7 +93,7 @@ def anjas():
         print 'Klik Enter Otomatis ke Browser'
         print """Untuk mengambil licensi
 ============================="""
-        os.system('xdg-open https://duit.cc/ale3V ')
+        os.system('xdg-open https://mytreep.icu/Omp87 ')
         time.sleep(6)
         print 'Masukan licensi'
         uname = raw_input('\n\x1b[32;1m[\x1b[33;1m#\x1b[32;1m]\x1b[37;1m Username : ')
